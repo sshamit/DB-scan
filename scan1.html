@@ -1,0 +1,18 @@
+# Nmap 7.80 scan initiated Sat Nov 16 19:52:01 2019 as: "C:\\Program Files (x86)\\Nmap\\nmap.exe" -sV -p T:5432,1521,1433,50000,3306 -Pn -o scan1.html -oX C:\\Users\\kushwaha_a\\Desktop\\powershell\\Nmap-Scan.PS1\\52.87.108.151.xml 52.87.108.151
+Nmap scan report for ec2-52-87-108-151.compute-1.amazonaws.com (52.87.108.151)
+Host is up (0.25s latency).
+
+PORT      STATE    SERVICE    VERSION
+1433/tcp  filtered ms-sql-s
+1521/tcp  filtered oracle
+3306/tcp  filtered mysql
+5432/tcp  open     postgresql PostgreSQL DB 9.6.0 or later
+50000/tcp filtered ibm-db2
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port5432-TCP:V=7.80%I=7%D=11/16%Time=5DD00617%P=i686-pc-windows-windows
+SF:%r(SMBProgNeg,8C,"E\0\0\0\x8bSFATAL\0VFATAL\0C0A000\0Munsupported\x20fr
+SF:ontend\x20protocol\x2065363\.19778:\x20server\x20supports\x202\.0\x20to
+SF:\x203\.0\0Fpostmaster\.c\0L2016\0RProcessStartupPacket\0\0");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Nov 16 19:52:15 2019 -- 1 IP address (1 host up) scanned in 14.07 seconds
